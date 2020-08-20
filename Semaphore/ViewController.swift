@@ -12,9 +12,6 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var actionButton: UIButton!
     @IBOutlet weak var signalsStackView: UIStackView!
-    @IBOutlet weak var redView: UIView!
-    @IBOutlet weak var yellowView: UIView!
-    @IBOutlet weak var greenView: UIView!
     
     private let activate: (UIView) -> Void = { $0.alpha = 1 }
     private let deactivate: (UIView) -> Void = { $0.alpha = 0.3 }
@@ -27,7 +24,6 @@ class ViewController: UIViewController {
         signalsStackView.arrangedSubviews.forEach { signal in
             signal.frame = CGRect(x: 0,y: 0,width: 100,height: 100)
             signal.layer.cornerRadius = signal.frame.size.width / 2
-            signal.layer.masksToBounds = true
             deactivate(signal)
         }
     }

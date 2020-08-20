@@ -72,10 +72,7 @@
                     </view>
                     <connections>
                         <outlet property="actionButton" destination="2Xr-kR-8NA" id="eof-l0-IdK"/>
-                        <outlet property="greenView" destination="GgD-UM-Qeu" id="HT2-1h-qDp"/>
-                        <outlet property="redView" destination="y7r-sQ-39q" id="by6-0Y-akC"/>
                         <outlet property="signalsStackView" destination="hZ9-9l-8gH" id="l0H-WD-aWo"/>
-                        <outlet property="yellowView" destination="JMI-3q-iYT" id="sri-ig-SFw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
